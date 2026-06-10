@@ -13,11 +13,11 @@
   <style>
     /* ===== ЦВЕТОВАЯ ПАЛИТРА: БЕЖЕВО-РОЗОВАЯ ===== */
     :root {
-      --blush:       #E8C4C4;
-      --light-blush: #F5DEDE;
-      --pale-blush:  #FBF0F0;
-      --deep-blush:  #D4A0A0;
-      --rose:        #C98B8B;
+      --blush:       #DDB8AE;   /* был #E8C4C4 — теплее, менее розовый */
+      --light-blush: #EFE0D5;   /* был #F5DEDE — бежево-розовый */
+      --pale-blush:  #F7F0EA;   /* был #FBF0F0 — почти бежевый */
+      --deep-blush:  #C49080;   /* был #D4A0A0 — земляной оттенок */
+      --rose:        #C98B8B;   /* оставляем — только для акцентных надписей */
 
       --beige:       #E8DDD0;
       --light-beige: #F5EFE8;
@@ -28,13 +28,13 @@
       --graphite:    #4A4040;
       --soft-char:   #3A3030;
       --white:       #FFFFFF;
-      --off-white:   #FBF9F7;
-      --light-gray:  #F5F0EB;
+      --off-white:   #FBF9F6;   /* чуть теплее */
+      --light-gray:  #F2EDE6;   /* был #F5F0EB — бежевее */
 
-      --shadow:      rgba(180, 130, 120, 0.10);
-      --shadow-hover:rgba(180, 130, 120, 0.20);
-      --pink-glow:   rgba(232, 196, 196, 0.45);
-      --pink-border: rgba(201, 139, 139, 0.35);
+      --shadow:      rgba(160, 120, 100, 0.10);
+      --shadow-hover:rgba(160, 120, 100, 0.20);
+      --pink-glow:   rgba(210, 175, 155, 0.40);  /* теплее */
+      --pink-border: rgba(180, 130, 110, 0.30);
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -99,9 +99,9 @@
       justify-content: center;
       align-items: center;
       background: linear-gradient(160deg,
-        var(--pale-beige) 0%,
-        var(--light-blush) 40%,
-        var(--pale-blush)  70%,
+        var(--pale-beige)  0%,
+        var(--light-beige) 35%,
+        var(--pale-blush)  65%,
         var(--light-beige) 100%);
       position: relative;
       overflow: hidden;
@@ -111,8 +111,8 @@
       position: absolute;
       inset: 0;
       background-image:
-        radial-gradient(circle at 20% 30%, rgba(232,196,196,.25) 0%, transparent 35%),
-        radial-gradient(circle at 80% 70%, rgba(214,197,176,.20) 0%, transparent 35%);
+        radial-gradient(circle at 20% 30%, rgba(210,175,155,.18) 0%, transparent 35%),
+        radial-gradient(circle at 80% 70%, rgba(214,197,176,.18) 0%, transparent 35%);
       pointer-events: none;
     }
 
